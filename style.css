@@ -331,11 +331,43 @@
   border-radius: 8px;
 }
   </style>
-/* 공통 버튼 스타일 */
-.quick-link-btn {
+/* 🔄 반응형 디자인 - 모바일 최적화 */
+@media (max-width: 768px) {
+  body {
+    padding: 10px;
+  }
+  .time-section, .picker-controls, .text-tools {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .text-tools button, .picker-controls input, .picker-controls button {
+    width: 100%;
+    margin-bottom: 5px;
+  }
+}
+
+/* 🔄 섹션 페이드인 애니메이션 */
+.section {
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+/* ✅ 하이러닝 & Hiclass 버튼을 묶는 flex 컨테이너 */
+.quick-links {
   position: absolute;
   top: 20px;
   left: 20px;
+  display: flex;
+  gap: 10px; /* 버튼 간격 */
+  z-index: 1000;
+}
+
+/* ✅ 공통 버튼 스타일 */
+.quick-link-btn {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -349,7 +381,6 @@
   font-size: 0.9rem;
   font-weight: bold;
   transition: background-color 0.3s ease;
-  z-index: 1000;
 }
 
 .quick-link-btn:hover {
@@ -358,9 +389,4 @@
 
 .quick-link-btn span {
   line-height: 1.2;
-}
-
-/* 두 번째 버튼(Hiclass)은 오른쪽으로 약간 띄우기 */
-.quick-link-btn:nth-child(2) {
-  left: 120px;
 }
