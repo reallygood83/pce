@@ -355,38 +355,39 @@
   from {opacity: 0;}
   to {opacity: 1;}
 }
-
-/* ✅ 하이러닝 & Hiclass 버튼을 묶는 flex 컨테이너 */
-.quick-links {
-  position: absolute;
-  top: 20px;
-  left: 20px;
+.header-nav {
   display: flex;
-  gap: 10px; /* 버튼 간격 */
-  z-index: 1000;
+  align-items: center;
+  justify-content: space-between;  /* 왼쪽엔 제목, 오른쪽엔 버튼 */
+  background-color: #fff;          /* 배경색 (원하는 대로) */
+  padding: 10px 20px;             /* 공간 확보 */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 10px;            /* 헤더 아래 간격 */
 }
 
-/* ✅ 공통 버튼 스타일 */
-.quick-link-btn {
+.page-title {
+  font-size: 1.8rem;
+  color: #2a623d;
+  margin: 0;
+}
+
+.nav-links {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  gap: 12px;
+}
+
+.nav-btn {
   text-decoration: none;
   background-color: #2a623d;
   color: white;
-  padding: 10px 15px;
-  border-radius: 12px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  padding: 8px 14px;
+  border-radius: 8px;
   font-size: 0.9rem;
-  font-weight: bold;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
 }
 
-.quick-link-btn:hover {
+.nav-btn:hover {
   background-color: #224e31;
 }
 
-.quick-link-btn span {
-  line-height: 1.2;
-}
