@@ -72,163 +72,214 @@
         </div>
       </div>
     </div>
-<!-- 2. 오늘 날짜 & 시간표 --> 
-    <div class="section" draggable="true">
-      <div class="section-header">
-        <span>오늘 날짜 및 시간표</span>
-        <button class="toggle-btn" aria-label="toggle">접기/펼치기</button>
+<!-- 2. 오늘 날짜 & 시간표 -->
+<div class="section" draggable="true">
+  <div class="section-header">
+    <span>오늘 날짜 및 시간표</span>
+    <button class="toggle-btn" aria-label="toggle">접기/펼치기</button>
+  </div>
+  <div class="section-content">
+    <div class="date-timetable-section">
+      <div class="date-timetable">
+        <strong>오늘 날짜:</strong> <span id="todayInfo"></span>
       </div>
-      <div class="section-content">
-        <div class="date-timetable-section">
-          <div class="date-timetable">
-            <strong>오늘 날짜:</strong> <span id="todayInfo"></span>
-          </div>
-          <div class="timetable-container">
-            <table class="timetable">
-              <thead>
-                <tr>
-                  <th>1교시</th>
-                  <th>2교시</th>
-                  <th>3교시</th>
-                  <th>4교시</th>
-                  <th>5교시</th>
-                  <th>6교시</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>
-                    <select class="subjectSelector">
-                      <option>선택</option>
-                      <option>국어</option>
-                      <option>수학</option>
-                      <option>사회</option>
-                      <option>과학</option>
-                      <option>영어</option>
-                      <option>음악</option>
-                      <option>미술</option>
-                      <option>체육</option>
-                      <option>실과</option>
-                      <option>도덕</option>
-                      <option>학교</option>
-                      <option>사람들</option>
-                      <option>우리나라</option>
-                      <option>탐험</option>
-                      <option>나</option>
-                      <option>자연</option>
-                      <option>마을</option>
-                      <option>세계</option>
-                      <option>입력</option>
-                    </select>
-                    <input type="text" class="customSubject" style="display:none" placeholder="직접 입력"/>
-                  </td>
-                  <td>
-                    <select class="subjectSelector">
-                      <option>선택</option>
-                      <option>국어</option>
-                      <option>수학</option>
-                      <option>사회</option>
-                      <option>과학</option>
-                      <option>영어</option>
-                      <option>음악</option>
-                      <option>미술</option>
-                      <option>체육</option>
-                      <option>실과</option>
-                      <option>도덕</option>
-                      <option>학교</option>
-                      <option>사람들</option>
-                      <option>우리나라</option>
-                      <option>탐험</option>
-                      <option>나</option>
-                      <option>자연</option>
-                      <option>마을</option>
-                      <option>세계</option>
-                      <option>입력</option>
-                    </select>
-                    <input type="text" class="customSubject" style="display:none" placeholder="직접 입력"/>
-                  </td>
-                  <td>
-                    <select class="subjectSelector">
-                      <option>선택</option>
-                      <option>국어</option>
-                      <option>수학</option>
-                      <option>사회</option>
-                      <option>과학</option>
-                      <option>영어</option>
-                      <option>음악</option>
-                      <option>미술</option>
-                      <option>체육</option>
-                      <option>실과</option>
-                      <option>도덕</option>
-                      <option>학교</option>
-                      <option>사람들</option>
-                      <option>우리나라</option>
-                      <option>탐험</option>
-                      <option>나</option>
-                      <option>자연</option>
-                      <option>마을</option>
-                      <option>세계</option>
-                      <option>입력</option>
-                    </select>
-                    <input type="text" class="customSubject" style="display:none" placeholder="직접 입력"/>
-                  </td>
-                  <td>
-                    <select class="subjectSelector">
-                      <option>선택</option>
-                      <option>국어</option>
-                      <option>수학</option>
-                      <option>사회</option>
-                      <option>과학</option>
-                      <option>영어</option>
-                      <option>음악</option>
-                      <option>미술</option>
-                      <option>체육</option>
-                      <option>실과</option>
-                      <option>도덕</option>
-                      <option>학교</option>
-                      <option>사람들</option>
-                      <option>우리나라</option>
-                      <option>탐험</option>
-                      <option>나</option>
-                      <option>자연</option>
-                      <option>마을</option>
-                      <option>세계</option>
-                      <option>입력</option>
-                    </select>
-                    <input type="text" class="customSubject" style="display:none" placeholder="직접 입력"/>
-                  </td>
-                  <td>
-                    <select class="subjectSelector">
-                      <option>선택</option>
-                      <option>국어</option>
-                      <option>수학</option>
-                      <option>사회</option>
-                      <option>과학</option>
-                      <option>영어</option>
-                      <option>음악</option>
-                      <option>미술</option>
-                      <option>체육</option>
-                      <option>실과</option>
-                      <option>도덕</option>
-                      <option>학교</option>
-                      <option>사람들</option>
-                      <option>우리나라</option>
-                      <option>탐험</option>
-                      <option>나</option>
-                      <option>자연</option>
-                      <option>마을</option>
-                      <option>세계</option>
-                      <option>입력</option>
-                    </select>
-                    <input type="text" class="customSubject" style="display:none" placeholder="직접 입력"/>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
+      <div class="timetable-container">
+        <table class="timetable">
+          <thead>
+            <tr>
+              <th>1교시</th>
+              <th>2교시</th>
+              <th>3교시</th>
+              <th>4교시</th>
+              <th>5교시</th>
+              <th>6교시</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <!-- 1교시 -->
+              <td>
+                <select class="subjectSelector">
+                  <option>선택</option>
+                  <option>국어</option>
+                  <option>수학</option>
+                  <option>사회</option>
+                  <option>과학</option>
+                  <option>영어</option>
+                  <option>음악</option>
+                  <option>미술</option>
+                  <option>체육</option>
+                  <option>실과</option>
+                  <option>도덕</option>
+                  <option>학교</option>
+                  <option>사람들</option>
+                  <option>우리나라</option>
+                  <option>탐험</option>
+                  <option>나</option>
+                  <option>자연</option>
+                  <option>마을</option>
+                  <option>세계</option>
+                  <option>입력</option>
+                </select>
+                <input type="text" class="customSubject" style="display:none" placeholder="직접 입력"/>
+              </td>
+              <!-- 2교시 -->
+              <td>
+                <select class="subjectSelector">
+                  <option>선택</option>
+                  <option>국어</option>
+                  <option>수학</option>
+                  <option>사회</option>
+                  <option>과학</option>
+                  <option>영어</option>
+                  <option>음악</option>
+                  <option>미술</option>
+                  <option>체육</option>
+                  <option>실과</option>
+                  <option>도덕</option>
+                  <option>학교</option>
+                  <option>사람들</option>
+                  <option>우리나라</option>
+                  <option>탐험</option>
+                  <option>나</option>
+                  <option>자연</option>
+                  <option>마을</option>
+                  <option>세계</option>
+                  <option>입력</option>
+                </select>
+                <input type="text" class="customSubject" style="display:none" placeholder="직접 입력"/>
+              </td>
+              <!-- 3교시 -->
+              <td>
+                <select class="subjectSelector">
+                  <option>선택</option>
+                  <option>국어</option>
+                  <option>수학</option>
+                  <option>사회</option>
+                  <option>과학</option>
+                  <option>영어</option>
+                  <option>음악</option>
+                  <option>미술</option>
+                  <option>체육</option>
+                  <option>실과</option>
+                  <option>도덕</option>
+                  <option>학교</option>
+                  <option>사람들</option>
+                  <option>우리나라</option>
+                  <option>탐험</option>
+                  <option>나</option>
+                  <option>자연</option>
+                  <option>마을</option>
+                  <option>세계</option>
+                  <option>입력</option>
+                </select>
+                <input type="text" class="customSubject" style="display:none" placeholder="직접 입력"/>
+              </td>
+              <!-- 4교시 -->
+              <td>
+                <select class="subjectSelector">
+                  <option>선택</option>
+                  <option>국어</option>
+                  <option>수학</option>
+                  <option>사회</option>
+                  <option>과학</option>
+                  <option>영어</option>
+                  <option>음악</option>
+                  <option>미술</option>
+                  <option>체육</option>
+                  <option>실과</option>
+                  <option>도덕</option>
+                  <option>학교</option>
+                  <option>사람들</option>
+                  <option>우리나라</option>
+                  <option>탐험</option>
+                  <option>나</option>
+                  <option>자연</option>
+                  <option>마을</option>
+                  <option>세계</option>
+                  <option>입력</option>
+                </select>
+                <input type="text" class="customSubject" style="display:none" placeholder="직접 입력"/>
+              </td>
+              <!-- 5교시 -->
+              <td>
+                <select class="subjectSelector">
+                  <option>선택</option>
+                  <option>국어</option>
+                  <option>수학</option>
+                  <option>사회</option>
+                  <option>과학</option>
+                  <option>영어</option>
+                  <option>음악</option>
+                  <option>미술</option>
+                  <option>체육</option>
+                  <option>실과</option>
+                  <option>도덕</option>
+                  <option>학교</option>
+                  <option>사람들</option>
+                  <option>우리나라</option>
+                  <option>탐험</option>
+                  <option>나</option>
+                  <option>자연</option>
+                  <option>마을</option>
+                  <option>세계</option>
+                  <option>입력</option>
+                </select>
+                <input type="text" class="customSubject" style="display:none" placeholder="직접 입력"/>
+              </td>
+              <!-- 6교시 -->
+              <td>
+                <select class="subjectSelector">
+                  <option>선택</option>
+                  <option>국어</option>
+                  <option>수학</option>
+                  <option>사회</option>
+                  <option>과학</option>
+                  <option>영어</option>
+                  <option>음악</option>
+                  <option>미술</option>
+                  <option>체육</option>
+                  <option>실과</option>
+                  <option>도덕</option>
+                  <option>학교</option>
+                  <option>사람들</option>
+                  <option>우리나라</option>
+                  <option>탐험</option>
+                  <option>나</option>
+                  <option>자연</option>
+                  <option>마을</option>
+                  <option>세계</option>
+                  <option>입력</option>
+                </select>
+                <input type="text" class="customSubject" style="display:none" placeholder="직접 입력"/>
+              </td>
+            </tr>
+          </tbody>
+        </table>
       </div>
-     </div>
+    </div>
+  </div>
+</div>
+
+<!-- 스크립트: '입력' 선택 시 직접 입력 필드 표시 -->
+<script>
+  // 오늘 날짜 자동 표기 (예시)
+  document.getElementById('todayInfo').textContent = new Date().toLocaleDateString();
+
+  // '입력' 선택 시 해당 셀의 input 표시/숨기기
+  const selectors = document.querySelectorAll('.subjectSelector');
+  selectors.forEach(select => {
+    select.addEventListener('change', e => {
+      const input = select.nextElementSibling; // 바로 뒤에 있는 input
+      if (e.target.value === '입력') {
+        input.style.display = 'inline-block';
+      } else {
+        input.style.display = 'none';
+      }
+    });
+  });
+</script>
+
     </div>    <!-- Perplexity 검색 -->
     <div class="section" draggable="true">
       <div class="section-header">
